@@ -1,0 +1,314 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* neutral colors */
+  --neutral-color-white : #fff;
+  --neutral-color-black : #0B0911;
+  --neutral-color-blue : #130F1E;
+
+  /* components element color */
+  --containerTest-background-color: #1C162C;
+  --primary-color-purple : #8257E5;
+  --primary-color-purple-hover: #9674E5;
+  --stroke-color: #D9CDF7;
+  --primary-color-black: #3C3748;
+
+}
+
+/* CSS MULTIPLE USES */
+h1{
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 135%;
+  font-size: 28px;
+  color: var(--neutral-color-white);
+}
+.description{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: var(--neutral-color-white);
+  opacity: 0.67;
+  font-size: 14px;
+}
+
+/* style */
+html, body, main{
+  background-color: var(--neutral-color-black);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* container types style  */
+.containerTypes{
+  padding: 77px 107px 76px 110px;
+  width: 100%;
+}
+
+.containerTypes table{
+  margin-top: 68px;
+  background-color: var(--containerTest-background-color);
+  width: 100%;
+}
+table thead{
+  display: block;
+  padding: 24px 16px;
+  
+}
+table thead tr th:nth-child(1){
+  width: 10%;
+}
+table thead tr th:nth-child(5){
+  width: 10%;
+}
+table thead tr th{
+  text-align: center;
+  width: 30%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: var(--neutral-color-white);
+  font-size: 11px;
+}
+table tbody{
+ display: flex;
+ background-color: var(--neutral-color-black);
+}
+table tbody .details{
+   padding-top: 52px;
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+   padding-bottom:42px;
+   width: 10%;
+   background-color: var(--containerTest-background-color);
+}
+table tbody .details td{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: var(--neutral-color-white);
+  font-size: 11px;
+}
+table tbody .buttons{
+  display: flex;
+  width: 30%;
+  gap: 20px;
+  padding-top: 32px;
+  align-items: center;
+  flex-direction: column;
+}
+table tbody .buttons4{
+  padding-top: 32px;
+  padding-right: 4px;
+  width: 5%;
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+  flex-direction: column;
+}
+/* buttons */
+.defaultButton{
+  background: var(--primary-color-purple);
+  border-radius: 99px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  padding: 18px 24px;
+  color: white;
+  border: 0;
+}
+.buttons:nth-child(4) td  .hoverButton{
+  background: var(--neutral-color-black);
+}
+.buttons:nth-child(3) td  .hoverButton{
+  background: var(--primary-color-black);
+}
+/* hover button */
+.hoverButton{
+  background: var(--primary-color-purple-hover);
+  border-radius: 99px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  padding: 18px 24px;
+  color: white;
+  border: 0;
+}
+.buttons:nth-child(4) .default  .defaultButton{
+  background: var(--neutral-color-black);
+}
+.buttons:nth-child(3) .default  .defaultButton{
+  background: var(--primary-color-black);
+}
+/* focus button */
+.focusButton{
+  background: var(--primary-color-purple);
+  border-radius: 99px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  padding: 18px 24px;
+  color: white;
+  border: 2px solid var(--stroke-color);
+}
+.buttons:nth-child(3) td .focusButton{
+  background: var(--primary-color-black);
+}
+.buttons:nth-child(4) td .focusButton{
+  background: var(--neutral-color-black);
+}
+/* disable button */
+.disableButton{
+  background: var(--primary-color-purple);
+  border-radius: 99px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  padding: 12px 24px;
+  color: white;
+  opacity: 0.61;
+  border: 0;
+}
+.buttons:nth-child(3) td .disableButton{
+  background: var(--primary-color-black);
+}
+.buttons:nth-child(4) td .disableButton{
+  background: var(--neutral-color-black);
+}
+/* loading button */
+.loadingButton{
+  background: var(--primary-color-purple);
+  border-radius: 99px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  padding: 18px 24px;
+  color: white;
+  border: 0;
+  display: flex;
+  gap: 8px;
+  transition: animation 1s;
+}
+.loadingButton .loader{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: white;
+  border-left-color: white;
+  border-bottom-color: white;
+}
+.buttons:nth-child(4) td  .loadingButton{
+  background: var(--neutral-color-black);
+}
+.buttons:nth-child(3) td  .loadingButton{
+  background: var(--primary-color-black);
+}
+/* movable butoon */
+.movableButton{
+  background: var(--primary-color-purple);
+  border-radius: 99px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  padding: 18px 24px;
+  color: white;
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bar{
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.bar span{
+  border: 1px solid white;
+  animation: color 2s ease forwards;
+}
+.buttons:nth-child(3) td  .movableButton{
+  background: var(--primary-color-black);
+}
+.buttons:nth-child(4) td  .movableButton{
+  background: var(--neutral-color-black);
+}
+/* effects */
+#hover:hover{
+  background-color: var(--primary-color-purple-hover);
+  transition: 1s;
+}
+#focus:focus{
+  background-color: var(--primary-color-purple-hover);
+  transition: 1s;
+}
+#disable:hover{
+  background-color: var(--primary-color-purple-hover);
+  transition: 1s;
+  cursor: no-drop;
+}
+#loading:hover{
+  background: var(--primary-color-purple-hover);
+  cursor:progress;
+  transition: 1s;
+}
+.loadingButton:hover .loader{
+  animation: spin 1s ease infinite;
+}
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#moveble:hover{
+  cursor: col-resize;
+  background: var(--primary-color-purple-hover);
+}
+@keyframes color {
+  100%{
+    border-color: rgb(255, 217, 0);
+  }
+}
+/* article style */
+.containerTest{
+  display: flex;
+  flex-direction: column;
+  width: 406px;
+  padding: 107px 44px ;
+  background-color: var(--containerTest-background-color);
+}
+.containerTest .buttonsDemo{
+ margin-top:68px;
+ display: flex;
+ flex-direction: column;
+ gap: 32px;
+}
+.buttonsDemo .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--primary-color-purple);
+  border: 0;
+  outline: 0;
+  gap: 8px;
+  padding: 14px 4px ;
+  border-radius: 100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: var(--neutral-color-white);
+  font-size: 14px;
+}
+.buttonsDemo .btn:nth-child(2){
+  background: var(--primary-color-black);
+}
+.buttonsDemo .btn:nth-child(3){
+  background: var(--containerTest-background-color);
+}

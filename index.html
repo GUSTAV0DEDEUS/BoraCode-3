@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bora Code | 3</title>
+  </head>
+  <body>
+    <main>
+      <section class="containerTypes">
+        <h1>Tipos de botão</h1>
+        <p class="description">
+          Dentro de um layout, botões servem para destacar ações importantes a
+          serem tomadas. <br />
+          Acompanhe abaixo um exemplo de tipos e propriedades.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>BOTÃO PRIMÁRIO</th>
+              <th>BOTÃO SECUNDÁRIO</th>
+              <th>BOTÃO TERCIÁRIO</th>
+              <th>CURSOR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="details">
+              <td>DEFAULT</td>
+              <td>HOVER</td>
+              <td>FOCUS</td>
+              <td>DISABLE</td>
+              <td>LOANDING</td>
+              <td>MOVABLE</td>
+            </tr>
+            <tr class="buttons">
+              <td class="default">
+                <button class="defaultButton" id="hover">
+                  DEFAULT PRIMARY
+                </button>
+              </td>
+              <td>
+                <button class="hoverButton" id="hover">HOVER PRIMARY</button>
+              </td>
+              <td>
+                <button class="focusButton" id="focus">FOCUS PRIMARY</button>
+              </td>
+              <td>
+                <button class="disableButton" id="disable">
+                  DISABLE PRIMARY
+                </button>
+              </td>
+              <td>
+                <button class="loadingButton" id="loading">
+                  <div class="loader"></div>
+                  LOADING PRIMARY
+                </button>
+              </td>
+              <td>
+                <button class="movableButton" id="moveble">
+                  <div class="bar"><span></span><span></span><span></span></div>
+                  MOVEBLE PRIMARY
+                </button>
+              </td>
+            </tr>
+            <tr class="buttons">
+              <td class="default">
+                <button class="defaultButton" id="hover">
+                  DEFAULT SECUNDARY
+                </button>
+              </td>
+              <td>
+                <button class="hoverButton" id="hover">HOVER SECUNDARY</button>
+              </td>
+              <td>
+                <button class="focusButton" id="focus">FOCUS SECUNDARY</button>
+              </td>
+              <td>
+                <button class="disableButton" id="disable">
+                  DISABLE SECUNDARY
+                </button>
+              </td>
+              <td>
+                <button class="loadingButton" id="loading">
+                  <div class="loader"></div>
+                  LOADING SECUNDARY
+                </button>
+              </td>
+              <td>
+                <button class="movableButton" id="moveble">
+                  <div class="bar"><span></span><span></span><span></span></div>
+                  MOVABLE SECUNDARY
+                </button>
+              </td>
+            </tr>
+            <tr class="buttons">
+              <td class="default">
+                <button class="defaultButton" id="hover">
+                  DEFAULT TERTIARY
+                </button>
+              </td>
+              <td>
+                <button class="hoverButton" id="hover">HOVER TERTIARY</button>
+              </td>
+              <td>
+                <button class="focusButton" id="focus">FOCUS TERTIARY</button>
+              </td>
+              <td>
+                <button class="disableButton" id="disable">
+                  DISABLE TERTIARY
+                </button>
+              </td>
+              <td>
+                <button class="loadingButton" id="loading">
+                  <div class="loader"></div>
+                  LOADING TERTIARY
+                </button>
+              </td>
+              <td>
+                <button class="movableButton" id="moveble" >
+                  <div class="bar"><span></span><span></span><span></span></div>
+                  MOVEBLE TERTIARY
+                </button>
+              </td>
+            </tr>
+            <tr class="buttons4">
+              <td>
+                <img src="assets/img/pointer.svg" alt="pointer" srcset="" />
+              </td>
+              <td>
+                <img src="assets/img/pointer.svg" alt="pointer" srcset="" />
+              </td>
+              <td>
+                <img src="assets/img/pointer.svg" alt="pointer" srcset="" />
+              </td>
+              <td>
+                <img
+                  src="assets/img/pointerBlock.svg"
+                  alt="pointer"
+                  srcset=""
+                />
+              </td>
+              <td>
+                <img
+                  src="assets/img/poniterPicker.svg"
+                  alt="pointer"
+                  srcset=""
+                />
+              </td>
+              <td>
+                <img src="assets/img/pointerMove.svg" alt="pointer" srcset="" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <article class="containerTest">
+        <h1>Teste os Botões</h1>
+        <p class="description">
+          Interaja com os botões e observe a mudança de aparência e de cursores
+        </p>
+        <div class="buttonsDemo">
+          <button type="button" class="btn" id="hover">
+            <p class="btnPrimary">INTERAJA COMIGO</p>
+          </button>
+          <button type="button" class="btn" id="hover">
+            <p class="btnSecondary">INTERAJA COMIGO</p>
+          </button>
+          <button type="button" class="btn" id="hover">
+            <div class="bar"><span></span><span></span><span></span></div>
+            <p class="btnTertiary">INTERAJA COMIGO</p>
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
